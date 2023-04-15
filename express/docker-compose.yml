@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  express-app:
+    build:
+      context: .
+      args:
+        - SCREAT_KEY=value
+    ports:
+      - 4000:4000
+    environment:
+      - KEY=wow-workign-env-key-runtime
