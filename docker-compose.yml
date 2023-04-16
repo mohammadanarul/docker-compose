@@ -1,0 +1,21 @@
+version: '3'
+services:
+  try-react-app:
+    build:
+      context: ./try-reactjs
+      args:
+        - DOMAIN_NAME=https://hello-worl.com
+    ports:
+      - 3000:3000
+    environment:
+      - MAIN_DOMAIN=try-env-args
+
+  try-express-app:
+    build:
+      context: ./express
+      args:
+        - SCREAT_KEY=express-key-for-dev
+    ports:
+      - 4000:4000
+    environment:
+      - SK=try-ex-app
