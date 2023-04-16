@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  react-app-for-dev:
+    build:
+      context: .
+      args:
+        - rsk=value
+    ports:
+      - 3000:3000
+    environment:
+      - dom_name=val-dom-na

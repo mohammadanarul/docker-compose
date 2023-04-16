@@ -5,6 +5,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  var envVal = process.env 
+  console.log(`wow-working:`)
 
   return (
     <div className="App">
